@@ -1,4 +1,4 @@
-// Client entry point. Server-only helpers live in "@redeyed/sentinel-nextjs/server".
+// Client entry point. Server-only helpers live in "@redeyed_/sentinel-nextjs/server".
 export { SentinelCaptcha, default } from "./SentinelCaptcha";
 export { useSentinelToken } from "./useSentinelToken";
 export { loadSentinelScript } from "./loadSentinelScript";

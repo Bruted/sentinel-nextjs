@@ -5,7 +5,7 @@
  * imported into client ("use client") code. Import it from a Server Action,
  * Route Handler, or API route:
  *
- *   import { verifySentinel } from "@redeyed/sentinel-nextjs/server";
+ *   import { verifySentinel } from "@redeyed_/sentinel-nextjs/server";
  *
  * It intentionally has NO "use client" directive and no React imports so it
  * stays out of the client bundle.
@@ -28,7 +28,7 @@ function normalizeBaseUrl(baseUrl: string): string {
  *
  * @example
  * "use server";
- * import { verifySentinel } from "@redeyed/sentinel-nextjs/server";
+ * import { verifySentinel } from "@redeyed_/sentinel-nextjs/server";
  *
  * export async function submit(formData: FormData) {
  *   const ok = await verifySentinel(String(formData.get("sentinel-token")), {

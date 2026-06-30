@@ -18,7 +18,7 @@ import {
  * a bubbling `sentinel:solved` CustomEvent carrying the token.
  *
  * Pass the token from `onVerify` to a Server Action / Route Handler and verify
- * it there with `verifySentinel` (from "@redeyed/sentinel-nextjs/server").
+ * it there with `verifySentinel` (from "@redeyed_/sentinel-nextjs/server").
  * Your secret API key must NEVER reach the browser.
  *
  * @example
@@ -96,7 +96,7 @@ export function SentinelCaptcha(props: SentinelCaptchaProps) {
   if (!siteKey) {
     // eslint-disable-next-line no-console
     console.warn(
-      "[@redeyed/sentinel-nextjs] `siteKey` is required — rendering nothing. " +
+      "[@redeyed_/sentinel-nextjs] `siteKey` is required — rendering nothing. " +
         "Get a free key at https://redeyed.com/developers"
     );
     return null;

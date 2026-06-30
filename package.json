@@ -1,5 +1,5 @@
 {
-  "name": "@redeyed/sentinel-nextjs",
+  "name": "@redeyed_/sentinel-nextjs",
   "version": "1.0.0",
   "description": "Next.js client component + server verify helper for the Redeyed Sentinel CAPTCHA.",
   "license": "MIT",
@@ -24,11 +24,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redeyed/sentinel-nextjs.git"
+    "url": "git+https://github.com/bruted/sentinel-nextjs.git"
   },
   "homepage": "https://redeyed.com/developers",
   "bugs": {
-    "url": "https://github.com/redeyed/sentinel-nextjs/issues"
+    "url": "https://github.com/bruted/sentinel-nextjs/issues"
   },
   "keywords": [
     "redeyed",

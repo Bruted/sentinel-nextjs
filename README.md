@@ -1,4 +1,4 @@
-# @redeyed/sentinel-nextjs
+# @redeyed_/sentinel-nextjs
 
 Next.js bindings for the **Redeyed Sentinel** CAPTCHA: a `"use client"`
 component for rendering the widget plus a server-side `verifySentinel()` helper
@@ -8,7 +8,7 @@ need a free site key + API key from **<https://redeyed.com/developers>**.
 ## Install
 
 ```bash
-npm i @redeyed/sentinel-nextjs
+npm i @redeyed_/sentinel-nextjs
 ```
 
 > Ships TypeScript/TSX source under `src/`; Next.js transpiles it for you.
@@ -29,7 +29,7 @@ SENTINEL_API_KEY=sk_your_secret_api_key          # SECRET — server only
 "use client";
 
 import { useState } from "react";
-import { SentinelCaptcha } from "@redeyed/sentinel-nextjs";
+import { SentinelCaptcha } from "@redeyed_/sentinel-nextjs";
 import { signup } from "./actions";
 
 export function SignupForm() {
@@ -61,7 +61,7 @@ export function SignupForm() {
 // app/actions.ts
 "use server";
 
-import { verifySentinel } from "@redeyed/sentinel-nextjs/server";
+import { verifySentinel } from "@redeyed_/sentinel-nextjs/server";
 
 export async function signup(formData: FormData) {
   const token = String(formData.get("sentinel-token") ?? "");
@@ -84,7 +84,7 @@ export async function signup(formData: FormData) {
 ```ts
 // app/api/signup/route.ts
 import { NextResponse } from "next/server";
-import { verifySentinel } from "@redeyed/sentinel-nextjs/server";
+import { verifySentinel } from "@redeyed_/sentinel-nextjs/server";
 
 export async function POST(req: Request) {
   const { token } = await req.json();
@@ -121,7 +121,7 @@ export async function POST(req: Request) {
 
 POSTs to `{baseUrl}/api/v1/verify`. Returns `true` only when the response JSON
 has `data.success === true` (or top-level `success === true`); any failure
-returns `false` (fail-closed). **Import from `@redeyed/sentinel-nextjs/server`
+returns `false` (fail-closed). **Import from `@redeyed_/sentinel-nextjs/server`
 only — never from client code.**
 
 ## License
