@@ -1,0 +1,49 @@
+{
+  "name": "@redeyed/sentinel-nextjs",
+  "version": "1.0.0",
+  "description": "Next.js client component + server verify helper for the Redeyed Sentinel CAPTCHA.",
+  "license": "MIT",
+  "author": "Redeyed Corporation <dev@redeyed.com>",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./server": {
+      "types": "./src/verify.ts",
+      "default": "./src/verify.ts"
+    }
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redeyed/sentinel-nextjs.git"
+  },
+  "homepage": "https://redeyed.com/developers",
+  "bugs": {
+    "url": "https://github.com/redeyed/sentinel-nextjs/issues"
+  },
+  "keywords": [
+    "redeyed",
+    "sentinel",
+    "captcha",
+    "nextjs",
+    "next",
+    "react",
+    "bot-detection"
+  ],
+  "peerDependencies": {
+    "next": ">=13",
+    "react": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
