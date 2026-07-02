@@ -17,7 +17,7 @@ export interface SentinelSolvedDetail {
 export interface SentinelCaptchaProps {
   /**
    * Your public Sentinel site key. REQUIRED.
-   * Get one (free) at https://redeyed.com/developers.
+   * Get one (free) in Redeyed Lab → Sentinel → Sites.
    * Safe to expose in the browser (use NEXT_PUBLIC_SENTINEL_SITE_KEY).
    * If omitted, the component renders nothing and logs a console warning.
    */
@@ -52,8 +52,13 @@ export interface SentinelCaptchaProps {
 export interface VerifySentinelOptions {
   /** Public site key (NEXT_PUBLIC_SENTINEL_SITE_KEY). */
   siteKey: string;
-  /** Secret API key — SERVER-SIDE ONLY (SENTINEL_API_KEY). Never expose this. */
-  apiKey: string;
+  /**
+   * Secret key — SERVER-SIDE ONLY (SENTINEL_SECRET_KEY). Never expose this.
+   * Shown once in Redeyed Lab → Sentinel → Sites; keep it out of client code.
+   */
+  secretKey: string;
+  /** Optional end-user IP address, forwarded as `remoteip` for scoring. */
+  remoteip?: string;
   /** Override the API base URL. Defaults to https://redeyed.com. */
   baseUrl?: string;
 }
