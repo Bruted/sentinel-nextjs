@@ -32,6 +32,13 @@ export interface SentinelCaptchaProps {
   /** Optional color scheme, e.g. "light" | "dark" (maps to `data-scheme`). */
   scheme?: string;
 
+  /**
+   * Optional challenge difficulty: "easy" | "medium" | "hard" | "max" or 1-6
+   * (maps to `data-difficulty`). Only raises difficulty above the adaptive
+   * baseline — a risky visitor is always challenged hard regardless.
+   */
+  difficulty?: string | number;
+
   /** Base URL for the Sentinel script + assets. Defaults to https://redeyed.com. */
   baseUrl?: string;
 

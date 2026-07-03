@@ -119,6 +119,7 @@ export async function POST(req: Request) {
 | `widget`    | `string`                  |    no    | Widget variant (`data-widget`).                                |
 | `theme`     | `string`                  |    no    | Theme name (`data-theme`).                                     |
 | `scheme`    | `string`                  |    no    | Color scheme (`data-scheme`).                                  |
+| `difficulty`| `string \| number`        |    no    | Challenge strength: `easy`/`medium`/`hard`/`max` or `1`-`6` (`data-difficulty`). |
 | `baseUrl`   | `string`                  |    no    | Asset/script base URL. Defaults to `https://redeyed.com`.      |
 | `className` | `string`                  |    no    | Extra class on the container.                                  |
 
