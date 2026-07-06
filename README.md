@@ -118,7 +118,8 @@ export async function POST(req: Request) {
 | `onError`   | `(error: Error) => void`  |    no    | Called if the Sentinel script fails to load.                   |
 | `widget`    | `string`                  |    no    | Widget variant (`data-widget`).                                |
 | `theme`     | `string`                  |    no    | Theme name (`data-theme`).                                     |
-| `scheme`    | `string`                  |    no    | Color scheme (`data-scheme`).                                  |
+| `scheme`    | `string`                  |    no    | Color scheme (`data-scheme`): `default`, `ocean`, `forest`, `sunset`, `graphite`, `royalty`, `ruby`, `hacker`, `monochrome`, `midnight`, `aurora`. |
+| `width`     | `string`                  |    no    | Widget width, e.g. `full` / `100%` / `340px` (`data-width`).   |
 | `difficulty`| `string \| number`        |    no    | Challenge strength: `easy`/`medium`/`hard`/`max` or `1`-`6` (`data-difficulty`). |
 | `baseUrl`   | `string`                  |    no    | Asset/script base URL. Defaults to `https://redeyed.com`.      |
 | `className` | `string`                  |    no    | Extra class on the container.                                  |
@@ -144,6 +145,10 @@ The public **site key** stays in the browser (widget); the **secret key** never
 leaves your server. Both are issued in Redeyed Lab → Sentinel → Sites.
 
 ## Changelog
+
+### 1.0.2
+
+- Add `width` prop (`data-width`) and `midnight`/`aurora` schemes.
 
 ### 1.0.1
 

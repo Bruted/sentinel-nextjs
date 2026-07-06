@@ -33,6 +33,7 @@ export function SentinelCaptcha(props: SentinelCaptchaProps) {
     widget,
     theme,
     scheme,
+    width,
     difficulty,
     baseUrl = DEFAULT_BASE_URL,
     onVerify,
@@ -91,7 +92,7 @@ export function SentinelCaptcha(props: SentinelCaptchaProps) {
         handleSolved as EventListener
       );
     };
-  }, [siteKey, widget, theme, scheme, difficulty, baseUrl]);
+  }, [siteKey, widget, theme, scheme, width, difficulty, baseUrl]);
 
   // Required prop guard: render nothing + warn.
   if (!siteKey) {
@@ -115,6 +116,7 @@ export function SentinelCaptcha(props: SentinelCaptchaProps) {
       {...(widget ? { "data-widget": widget } : {})}
       {...(theme ? { "data-theme": theme } : {})}
       {...(scheme ? { "data-scheme": scheme } : {})}
+      {...(width ? { "data-width": width } : {})}
       {...(difficulty ? { "data-difficulty": String(difficulty) } : {})}
     />
   );

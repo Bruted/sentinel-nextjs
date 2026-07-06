@@ -29,8 +29,18 @@ export interface SentinelCaptchaProps {
   /** Optional theme name (maps to `data-theme`). */
   theme?: string;
 
-  /** Optional color scheme, e.g. "light" | "dark" (maps to `data-scheme`). */
+  /**
+   * Optional color scheme (maps to `data-scheme`). Any Sentinel scheme name:
+   * "default" | "ocean" | "forest" | "sunset" | "graphite" | "royalty" |
+   * "ruby" | "hacker" | "monochrome" | "midnight" | "aurora". Passed through
+   * as-is — the server enforces access to premium/animated schemes.
+   */
   scheme?: string;
+
+  /**
+   * Optional widget width, e.g. "full" | "100%" | "340px" (maps to `data-width`).
+   */
+  width?: string;
 
   /**
    * Optional challenge difficulty: "easy" | "medium" | "hard" | "max" or 1-6

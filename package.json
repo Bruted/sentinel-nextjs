@@ -1,6 +1,6 @@
 {
   "name": "@redeyed_/sentinel-nextjs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Next.js client component + server verify helper for the Redeyed Sentinel CAPTCHA.",
   "license": "MIT",
   "author": "Redeyed Corporation <dev@redeyed.com>",
